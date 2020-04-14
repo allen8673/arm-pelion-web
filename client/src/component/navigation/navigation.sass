@@ -1,0 +1,55 @@
+.nav
+    height: calc(100vh - 50px)
+    background-color: #fff
+.menuIcon
+    width: 25px
+    height: 25px
+.drop-down-menu
+    list-style: none
+    a
+        display: block
+        text-decoration: none
+        margin: 0 12px
+        padding: 8px
+        height: 60px
+        color: #999
+        border-bottom: 1px solid #efefef
+        &:hover
+            color: #1890ff
+            border-bottom: 1px solid #e6f7ff
+    &>li
+        position: relative
+        width: 120px
+        height: 60px
+        text-align: center
+        &:hover
+            border-right: 4px inset #1890ff
+            background-color: #e6f7ff
+            ul
+                display: block
+    ul
+        position: absolute
+        display: none
+        width: 160px
+        left: 120px
+        top: 0px
+        background-color: #fff
+        text-align: left
+        z-index: 1
+        box-shadow: 5px 5px 10px #0000001A
+        li
+            position: relative
+            width: 160px
+            height: 45px
+            &:hover
+                background-color: #e6f7ff
+        a
+            height: 45px
+            line-height: 45px
+            padding: 0
+
+.selected
+    border-right: 4px solid #1890ff
+    background-color: #e6f7ff
+    &>a
+        color: #1890ff
