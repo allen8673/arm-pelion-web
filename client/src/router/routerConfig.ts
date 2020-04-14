@@ -1,7 +1,12 @@
+
+import {
+    OverView
+} from 'component/components';
+
 export const routerConfig = [
     {
-        path: '/login',
-        component: null,
+        path: 'OverView',
+        component: OverView,
         auth: false,
         exact: false,
     }

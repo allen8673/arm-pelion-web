@@ -3,5 +3,7 @@ import { apiCaller } from '../../service/apiCaller';
 import './header.sass';
 
 export const Header: React.FC<any> = (props: any) => {
-    return <div />
+    return <header className='header_title' style={{ background: '#444444' }}>
+        Header
+        </header>
 };
