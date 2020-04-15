@@ -26,7 +26,7 @@ const RouterGuard: React.FC<any> = (props: any) => {
     const { config } = props;
     // const intl = useIntl();
     const { pathname } = window.location;
-    const token = '123' //localStorage.getItem('token');
+    const token = '' //localStorage.getItem('token');
     const isLogin = true;//jwtParse(token); // 要作jtw金鑰檢查，是否為正確的token
     const targetRouter = config.find((v: any) => v);
 

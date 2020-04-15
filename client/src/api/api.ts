@@ -8,9 +8,9 @@ export const api = axios.create({
 api.interceptors.request.use(Request => {
     const dt = +new Date() + 1800000;
     sessionStorage.setItem('timeOut', dt.toString());
-    localStorage.getItem('token') &&
-        (Request.headers.Authorization =
-            'Bearer Owicare::' + localStorage.getItem('token'));
+    //localStorage.getItem('token') &&
+        Request.headers.Authorization =
+            'Bearer ak_1MDE3MGU3NWIxY2IwNGU2ZTE4MDM3MzdmMDAwMDAwMDA01717173890cee18ba36734b00000000sy4PZsSKXZM11bmAXAqX6Z4jCLeqUOm3' ;
     return Request;
 });
 
